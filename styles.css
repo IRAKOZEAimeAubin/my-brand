@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --very-dark-blue-color: #141C3A;
+    --dark-purple-color: #6E07F3;
+    --dark-cyan-color: #5BE9B9;
+    --white-color: #FFFFFF;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: var(--font-family);
+}
+
+.logo {
+    color: var(--very-dark-blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--very-dark-blue-color);
+    font-weight: 500;
+}
+
+.nav-links .login-link {
+    color: var(--white-color);
+    background: var(--dark-purple-color);
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.hero,
+.about-me,
+.contact-me {
+    font-family: var(--font-family);
+    display: flex;
+}
+
+.hero .container {
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.hero .container h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--very-dark-blue-color);
+    margin-bottom: 1.5rem;
+}
+
+.hero .container h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--very-dark-blue-color);
+    margin-bottom: 1.5rem;
+}
+
+.hero .container img {
+    margin: 2rem 0;
+}
+
+.about-me {
+    background: var(--dark-purple-color);
+    color: var(--white-color);
+    display: block;
+}
+
+.about-me .container {
+    text-align: center;
+    padding: 9rem 4.5rem;
+}
+
+.about-me .container h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.125;
+}
+
+.about-me .container h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.contact-me .container {
+    margin: 8rem auto;
+}
+
+.contact-me .container h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.125;
+    text-align: center;
+    color: var(--very-dark-blue-color);
+}
+
+.contact-me .container form.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--very-dark-blue-color);
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    color: var(--white-color);
+}
+
+.contact-me .container form.contact-form label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.contact-me .container form.contact-form input {
+    padding: .4rem 0.2rem;
+    border: 1px solid var(--white-color);
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--white-color);
+    font-family: var(--font-family);
+}
+
+.contact-me .container form.contact-form input:focus {
+    outline: 0;
+}
+
+.contact-me .container form.contact-form textarea {
+    padding: .4rem 0.2rem;
+    border: 1px solid var(--white-color);
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--white-color);
+    font-family: var(--font-family);
+}
+
+.contact-me .container form.contact-form textarea:focus {
+    outline: 0;
+}
+
+.contact-me .container form.contact-form .messenger-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.contact-me .container form.contact-form .messenger-info .name,
+.contact-me .container form.contact-form .messenger-info .email,
+.contact-me .container form.contact-form .message {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me .container form.contact-form .messenger-info .name {
+    margin-right: 1rem;
+}
+
+.contact-me .container form.contact-form button {
+    margin: 1rem 0;
+    padding: 0.4rem 0;
+    align-self: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    background: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 0.25rem;
+    width: 40%;
+}
