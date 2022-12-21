@@ -52,11 +52,13 @@ nav {
     padding: 0.4rem 1rem;
     border-radius: 0.2rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .hero,
 .about-me,
-.contact-me {
+.contact-me,
+.login {
     font-family: var(--font-family);
     display: flex;
 }
@@ -113,7 +115,8 @@ nav {
     margin: 8rem auto;
 }
 
-.contact-me .container h1 {
+.contact-me .container h1,
+.login .container h1 {
     margin-bottom: 1.5rem;
     font-weight: 800;
     font-size: 2rem;
@@ -122,7 +125,8 @@ nav {
     color: var(--very-dark-blue-color);
 }
 
-.contact-me .container form.contact-form {
+.contact-me .container form.contact-form,
+.login .container form.login-form {
     display: flex;
     flex-direction: column;
     background: var(--very-dark-blue-color);
@@ -131,12 +135,14 @@ nav {
     color: var(--white-color);
 }
 
-.contact-me .container form.contact-form label {
+.contact-me .container form.contact-form label,
+.login .container form.login-form label {
     font-weight: 500;
     margin-bottom: 0.4rem;
 }
 
-.contact-me .container form.contact-form input {
+.contact-me .container form.contact-form input,
+.login .container form.login-form input {
     padding: .4rem 0.2rem;
     border: 1px solid var(--white-color);
     border-radius: 0.25rem;
@@ -145,7 +151,8 @@ nav {
     font-family: var(--font-family);
 }
 
-.contact-me .container form.contact-form input:focus {
+.contact-me .container form.contact-form input:focus,
+.login .container form.login-form input:focus {
     outline: 0;
 }
 
@@ -170,7 +177,8 @@ nav {
 
 .contact-me .container form.contact-form .messenger-info .name,
 .contact-me .container form.contact-form .messenger-info .email,
-.contact-me .container form.contact-form .message {
+.contact-me .container form.contact-form .message,
+.login .container form.login-form .info {
     display: flex;
     flex-direction: column;
 }
@@ -179,7 +187,8 @@ nav {
     margin-right: 1rem;
 }
 
-.contact-me .container form.contact-form button {
+.contact-me .container form.contact-form button,
+.login .container form.login-form button {
     margin: 1rem 0;
     padding: 0.4rem 0;
     align-self: center;
@@ -190,4 +199,17 @@ nav {
     border: 1px solid var(--white-color);
     border-radius: 0.25rem;
     width: 40%;
+}
+
+.login .container {
+    margin: 10rem auto;
+    width: 30%;
+}
+
+.login .container form.login-form .info:first-of-type {
+    margin-bottom: 1rem;
+}
+
+.login .container form.login-form input {
+    background: var(--white-color);
 }
